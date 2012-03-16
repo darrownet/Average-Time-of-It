@@ -9,9 +9,9 @@ var pool = generic_pool.Pool({
     create: function(callback) {
         new mysql.Database({
             hostname: 'just a security precaution',
-            user: 'wouldnt you llike to know',
+            user: 'wouldnt you like to know',
             password: 'Ill never tell',
-            database: 'just a sec now, hmm... nah.'
+            database: 'just a sec now, hmm... nah. sorry to be snarky. If youd like DB help, connect with me on twitter @darrownet.'
         }).connect(function(err, server) {
             callback(err, this);
         });
