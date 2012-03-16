@@ -1,0 +1,460 @@
+<section id="view_headLogo" class="headLogo">
+	<img src="img/averagetimeofit_logo.png" />
+</section>
+
+<section id="view_searchForm" class="searchForm">
+	<div id="search_field" class="searchField">How long does it take to...<br />
+		<input style="width:300px; text-align:center;" type="search" id="srchterm" placeholder="...complete the sentence" maxlength="95" />
+	</div>
+	<div id="search_field_submit">
+		<input class="serarchFieldSubmit" type="submit" id="srchsubmit" value="tell me!" />
+	</div>
+</section>
+
+<section id="view_welcomeScreen">
+	<div id="welcome_msg" style="padding:10px;">
+		<div style="height:30px;"></div>
+		<p><strong>Hey there! Welcome to Average Time of It.</strong></p>
+		<p>First check if what you're looking for already exists. If it does, great! You are very fortunate to have it so easy. Just take that knowledge and go impress all of your friends.</p>
+		<p>If the average time you're looking for isn't here. Please forgive its absence and do this webapp a huge favor and add it. Remember, sharing is caring and others might want to know.</p> 
+	</div>
+</section>
+
+<section id="view_searchNotFound">
+	<div id="msg" class="searchNotFoundMsg">Doh!<br />Sorry. It seems the average time for how long it takes to <span id="term" class="strongish"></span> isn't here. How about ya record it? Others might want to know.</div>
+	<div id="new_avg_submit"><input style="width:300px;" type="submit" id="newavgsubmit" value="start this average" /></div>
+	<br />
+	<div id="new_avg_stopwatch"><input style="width:300px;" type="submit" id="newavgstopwatch" value="use a stopwatch" /></div>
+</section>
+
+<section id="view_searchFound">
+	<br />
+	<div id="msg" style="padding:10px;">Sweet! we found ya something!<br />It takes, on average,  <span id="timeval" class="strongish"></span> to <span id="term" class="strongish"></span>.</div>
+	<br />
+	<div id="found_avg_submit"><input style="width:300px;" type="submit" id="foundavgsubmit" value="+ add to this average" /></div>
+	<br />
+	<div id="found_avg_stopwatch"><input style="width:300px;" type="submit" id="foundavgstopwatch" value="stopwatch" /></div>
+</section>
+
+<section id="view_averageCreateUpdate">
+	<div id="msg" style="width:300px; padding-top:30px;">
+			Cool you're sharing!<br />Thanks for <span id="add_updt_tog"></span> this average.<br /><br />
+			It takes <span"><input style="width:75px; type="text" id="timevalfield" placeholder="...enter time" /></span> to <span id="term" class="strongish"></span>.
+	</div>
+	<div style="position:absolute; height:25px; width:25px;" id="timevalfield_block"></div>
+	<br />
+	<br />
+	<div id="save_avg"><input style="width:300px;" type="submit" id="saveavg" value="save this average" /></div>
+	<div id="updt_avg"><input style="width:300px;" type="submit" id="updtavg" value="update this average" /></div>
+	<div id="social_controls" style="padding-top:5px;">
+		<div id="twitter" name="twitter" style="cursor:pointer; float:left; padding-left:20px;">Share on Twitter <span><input type="checkbox" value="on"></input></span></div>
+		<div id="facebook" name="facebook" style="cursor:pointer; float:right; padding-right:20px;">Share on Facebook <span><input type="checkbox" value="on"></input></span></div>
+	</div>
+	<br />
+	<br />
+	<br />
+	<div id="rev_avg_stopwatch"><input style="width:300px;" type="submit" id="revavgstopwatch" value="stopwatch" /></div>
+</section>
+
+<section id="view_dataSubmissionConfirm">
+	<div id="msg_create" class = "additionConfirmedFoundMsg">Thanks so much for your submission! You've just made it easier for people to find out that it takes <span id="timeval_create" class="strongish"></span> to <span id="searchterm_create" class="strongish"></span>.</div>
+	<div id="msg_update" class = "additionConfirmedFoundMsg">Thanks so much! You are a scholar and a gentleman. (gentilelady if you're a lady)<br /><br />You've just updated how long it takes to <span id="searchterm_update" class="strongish"></span>. You're time submission was <span id="timeval_update" class="strongish"></span>.</div>
+</section>
+
+<section id="view_timeEntryControls">
+	<div class="timeEntryControlsBg"></div>
+	<div id="time_entry_controls_container" class="timeEntryControlsContent">
+		<div id"days_container" class="comboContainer">
+			<div id="days_title" class="timeEntryComboBoxTitle">Days:</div>
+			<select class="timeEntryComboBox" id="days_list"></select>
+		</div>
+		<br />
+		<div id="hours_container" class="comboContainer">
+			<div id="hours_title" class="timeEntryComboBoxTitle">Hours:</div>
+			<select class="timeEntryComboBox" id="hours_list"></select>
+		</div>
+		<br />
+		<div id="minutes_container" class="comboContainer">
+			<div id="minutes_title" class="timeEntryComboBoxTitle">Minutes:</div>
+			<select class="timeEntryComboBox" id="minutes_list"></select>
+		</div>
+		<br />
+		<div id="seconds_container" class="comboContainer">
+			<div id="seconds_title" class="timeEntryComboBoxTitle">Seconds:</div>
+			<select class="timeEntryComboBox" id="seconds_list"></select>
+		</div>
+		<br />
+		<div class="timeEntryControlsButtons">
+			<div><input class="timeEntryButton" type="submit" id="timevals_save" value="done" /></div>
+			<br />
+			<br />
+			<br />
+			<div><input class="timeEntryButton" type="submit" id="timevals_reset" value="reset all values" /></div>
+			<br />
+			<div><input class="timeEntryButton" type="submit" id="timevals_close" value="close" /></div>
+		</div>
+	</div>
+</section>
+
+<section id="view_stopWatch" class="viewStopWatch">
+	<div id="clock_bg" class="clockBg"></div>
+	<div id="clock" class="clockContent"></div>
+</section>
+
+<section id="view_latenceyScreen" class="latencyScreen">
+	<div id="bg" class="latencyScreenBg"></div>
+	<div id="img" class="latencyScreenImg">
+		<img src="/img/loading_gfx.gif">
+	</div>
+</section>
+
+<script>
+	//
+	var active_term = "";
+	var active_id = 0;
+	var active_timeval = "";
+	//
+	$(document).ready(function() {
+		//
+		$('#view_searchForm #srchterm').val('');
+		$("#view_averageCreateUpdate #timevalfield").val('');
+		//
+		$("#timevalfield_block").width($("#timevalfield").width()+15);
+		$("#timevalfield_block").height($("#timevalfield").height()+8);
+		//
+		$('#view_searchForm #srchsubmit').click(function () {
+			var term = $('#srchterm').val();
+			var datavals = 'srchterm='+encodeURIComponent(term);
+			showLatencyScreen();
+			$.ajax({
+				url: "/searchAverages/",
+				dataType: "json",
+				type: "POST",
+				data: datavals,
+				cache: false,
+				complete: function(response){
+					routeSearchResponse($.parseJSON(response.responseText));
+					hideLatencyScreen();
+				}
+			});
+		return false;
+		});
+		//
+		$('#timevals_reset').click(function () {
+			resetListBoxContents();
+			return false;
+		});
+		$('#timevals_save').click(function () {
+			var days_val, hours_val, minutes_val, seconds_val = "";
+			var time_val_str = "";
+			days_val = $("#view_timeEntryControls #days_list" ).val();
+			hours_val = $("#view_timeEntryControls #hours_list" ).val();
+			minutes_val = $("#view_timeEntryControls #minutes_list" ).val();
+			seconds_val = $("#view_timeEntryControls #seconds_list" ).val();
+			time_val_str = days_val+":"+hours_val+":"+minutes_val+":"+seconds_val;
+			$("#view_averageCreateUpdate #timevalfield").val(time_val_str);
+			resetListBoxContents();
+			$("#view_timeEntryControls").hide();
+			return false;
+		});
+		$('#timevals_close').click(function () {
+			resetListBoxContents();
+			$("#view_timeEntryControls").hide();
+			return false;
+		});
+		//
+		$('#view_searchNotFound #newavgsubmit').click(function () {
+			averageCreateUpdate();
+		});
+		//
+		$('#view_searchFound #foundavgsubmit').click(function () {
+			averageCreateUpdate();
+		});
+		//
+		$('#view_averageCreateUpdate #timevalfield_block').click(function () {
+			showTimeEntryControls();
+		});
+		//
+		$('#view_averageCreateUpdate #saveavg, #view_averageCreateUpdate #updtavg').click(function () {
+			submitAverageItemInfo();
+		});
+		//
+		$("#welcome_stopwatch, #newavgstopwatch, #foundavgstopwatch, #revavgstopwatch").click(function () {
+			showStopWatch();
+		});
+		//
+		$("#view_averageCreateUpdate #social_controls #twitter, #view_averageCreateUpdate #social_controls #facebook").bind('click', function(event){
+			socialControlSelected(event.currentTarget);
+		});
+		//
+		buildListBoxContents();
+		//
+		createStopwatch($('#view_stopWatch #clock'));
+		//
+		resetViews();
+		//
+		$("#view_welcomeScreen").show();
+	});
+	//
+	function routeSearchResponse(obj){
+		if($('#srchterm').val() == "" || $('#srchterm').val() == " "){
+			return;
+		}
+		if(obj.msg == "AverageItemNotFound"){
+			// show 03 SEARCH RESULTS NOT FOUND VIEW
+			console.log("show 03 SEARCH RESULTS NOT FOUND VIEW");
+			active_term = obj.qry;
+			active_id = 0;
+			showSearchResultsNotFound(obj);
+		}
+		if(obj.msg == "AverageItemFound"){
+			// show 02 SEARCH RESULTS FOUND VIEW
+			console.log("show 02 SEARCH RESULTS FOUND VIEW");
+			active_term = obj.qry;
+			active_id = obj.iid;
+			active_timeval = obj.avg;
+			showSearchResultsFound(obj);
+		}
+	}
+	//
+	function resetViews(){
+		hideLatencyScreen();
+		$("#view_welcomeScreen").hide();
+		$("#view_searchNotFound").hide();
+		$("#view_searchFound").hide();
+		$("#view_averageCreateUpdate").hide();
+		$("#view_dataSubmissionConfirm").hide();
+		$("#view_timeEntryControls").hide();
+		$("#view_stopWatch").hide();
+		//$("#view_averageCreateUpdate #timevalfield").val('00:00:00:00');
+	}
+	//
+	function showSearchResultsNotFound(obj){
+		resetViews();
+		active_term = obj.qry;
+		$("#view_searchNotFound #msg #term").html(active_term);
+		$("#view_searchNotFound").show();
+	}
+	//
+	function showSearchResultsFound(obj){
+		resetViews();
+		$("#view_searchFound #msg #timeval").html(active_timeval);
+		$("#view_searchFound #msg #term").html(active_term);
+		$("#view_searchFound").show();
+	}
+	//
+	function averageCreateUpdate(){
+		resetViews();
+		if(active_id == 0){
+			$("#view_averageCreateUpdate #add_updt_tog").html('adding');
+			$("#view_averageCreateUpdate #save_avg").show();
+			$("#view_averageCreateUpdate #updt_avg").hide();
+		}else{
+			$("#view_averageCreateUpdate #add_updt_tog").html('updating');
+			$("#view_averageCreateUpdate #save_avg").hide();
+			$("#view_averageCreateUpdate #updt_avg").show();
+		}
+		$("#view_averageCreateUpdate #term").html(active_term);
+		$("#view_averageCreateUpdate").show();
+		//
+		var timevalfield_top = $("#timevalfield").offset().top;
+		var timevalfield_left = $("#timevalfield").offset().left;
+		$("#timevalfield_block").css('top', timevalfield_top);
+		$("#timevalfield_block").css('left', timevalfield_left);
+		console.log($("#timevalfield").offset().top);
+		console.log($("#timevalfield").offset().left);
+		//
+	}
+	//
+	function showTimeEntryControls(){
+		$("#view_timeEntryControls").show();
+	}
+	function hideTimeEntryControls(){
+		$("#view_timeEntryControls").hide();
+	}
+	//
+	function showStopWatch(){
+		$("#view_stopWatch").show();
+	}
+	function hideStopWatch(){
+		$("#view_stopWatch").hide();
+	}
+	//
+	function showLatencyScreen(){
+		$("#view_latenceyScreen").show();
+	}
+	function hideLatencyScreen(){
+		$("#view_latenceyScreen").hide();
+	}
+	//
+	function buildListBoxContents(){
+		//Days
+		var days_list_str = "";
+		for(var d = 0; d<=99; d++){
+			if(d < 10){
+				days_list_str += '<option>0'+d+'</option>'
+			}else{
+				days_list_str += '<option>'+d+'</option>'
+			}
+		}
+		$("#view_timeEntryControls #days_list" ).html(days_list_str);
+		//
+		//Hours
+		var hours_list_str = "";
+		for(var h = 0; h<=23; h++){
+			if(h < 10){
+				hours_list_str += '<option>0'+h+'</option>'
+			}else{
+				hours_list_str += '<option>'+h+'</option>'
+			}
+		}
+		$("#view_timeEntryControls #hours_list" ).html(hours_list_str);
+		//
+		//Minutes
+		var minutes_list_str = "";
+		for(var m = 0; m<=59; m++){
+			if(m < 10){
+				minutes_list_str += '<option>0'+m+'</option>'
+			}else{
+				minutes_list_str += '<option>'+m+'</option>'
+			}
+		}
+		$("#view_timeEntryControls #minutes_list" ).html(minutes_list_str);
+		//
+		//Seconds
+		var seconds_list_str = "";
+		for(var s = 0; s<=59; s++){
+			if(s < 10){
+				seconds_list_str += '<option>0'+s+'</option>'
+			}else{
+				seconds_list_str += '<option>'+s+'</option>'
+			}
+		}
+		$("#view_timeEntryControls #seconds_list" ).html(seconds_list_str);
+	}
+	function resetListBoxContents(){
+		$("#view_timeEntryControls #days_list" ).html('');
+		$("#view_timeEntryControls #hours_list" ).html('');
+		$("#view_timeEntryControls #minutes_list" ).html('');
+		$("#view_timeEntryControls #seconds_list" ).html('');
+		buildListBoxContents();
+	}
+	//
+	function submitAverageItemInfo(){
+		if($("#view_averageCreateUpdate #timevalfield").val() == "" || $("#view_averageCreateUpdate #timevalfield").val() == "00:00:00:00"){
+			return;
+		}
+		var avg_item = active_term;
+		var avg_time = $("#view_averageCreateUpdate #timevalfield").val();
+		if(active_id == 0){
+			submitNewAverageItem(avg_item, avg_time);
+		}else{
+			updateExistingAverageItem(avg_item, avg_time);
+		}
+	}
+	//
+	function submitNewAverageItem(i, t){
+		var item = i;
+		var time = t;
+		var datavals = 'desc='+encodeURIComponent(item)+'&time_value='+encodeURIComponent(time);
+		//
+		showLatencyScreen();
+		console.log(item);
+		$.ajax({
+			url: "/createAverage/",
+			dataType: "json",
+			type: "POST",
+			data: datavals,
+			cache: false,
+			complete: function(response){
+				dataSubmissionConfirmed(response, "create");
+				hideLatencyScreen();
+			}
+		});
+	}
+	function updateExistingAverageItem(i, t){
+		console.log("submit new time entry for the existing average item with the id of "+active_id+"...");
+		var item = i;
+		var time = t;
+		var datavals = 'time_value='+encodeURIComponent(time)+'&item_id='+active_id;
+		//
+		showLatencyScreen();
+		$.ajax({
+			url: "/updateAverage/",
+			dataType: "json",
+			type: "POST",
+			data: datavals,
+			cache: false,
+			complete: function(response){
+				dataSubmissionConfirmed(response, "update");
+				hideLatencyScreen();
+			}
+		});
+	}
+	function dataSubmissionConfirmed(resp, typ){
+		console.log(typ);
+		console.log("data submission confirmed start...");
+		//
+		resp_obj  = $.parseJSON(resp.responseText);
+		console.log(resp_obj);
+		//
+		resetViews();
+		//
+		$("#view_dataSubmissionConfirm").show();
+		$("#view_dataSubmissionConfirm #msg_create").hide();
+		$("#view_dataSubmissionConfirm #msg_update").hide();
+		//
+		if(typ == "update"){
+			console.log("update submission");
+			$("#view_dataSubmissionConfirm #msg_update").show();
+			$("#view_dataSubmissionConfirm #msg_update #searchterm_update").html(resp_obj.qry);
+			$("#view_dataSubmissionConfirm #msg_update #timeval_update").html(resp_obj.avg);
+		}
+		//
+		if(typ == "create"){
+			console.log("create submission");
+			$("#view_dataSubmissionConfirm #msg_create").show();
+			$("#view_dataSubmissionConfirm #msg_create #timeval_create").html(resp_obj.avg);
+			$("#view_dataSubmissionConfirm #msg_create #searchterm_create").html(resp_obj.qry);
+		}
+		//
+		$('#view_searchForm #srchterm').val('');
+		$("#view_averageCreateUpdate #timevalfield").val('');
+		//
+		var active_term = "";
+		var active_id = 0;
+		var active_timeval = "";
+		$("#view_averageCreateUpdate #timevalfield").val('...enter time');
+		//
+		console.log("data submission confirmed end...");
+	}
+	//
+	function saveStopWachTime(time_val){
+		$("#view_averageCreateUpdate #timevalfield").val(time_val);
+	}
+	//
+	//
+	function socialControlSelected(obj){
+		console.log($(obj).attr("id"));
+	}
+	// HANDLE OAUTH
+	//
+	// CHECK COOKIES...
+	!(function checkCookies(){
+		// check twitter cookie
+		if($.cookie("twitter_vals")){
+			console.log("	twitter vals available...");
+		}else{
+			console.log("	twitter vals not available...");
+			document.cookie = 'twitter_status=none; expires=Sat, 31 Dec 2011 23:59:59 UTC; path=/';
+		}
+		//
+		// check facebook cookie
+		if($.cookie("facebook_vals")){
+			console.log("	facebook vals available...");
+		}else{
+			console.log("	facebook vals not available...");
+			document.cookie = 'twitter_facebook=none expires=Sat, 31 Dec 2011 23:59:59 UTC; path=/';
+		}
+	})();
+</script>

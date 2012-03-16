@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* Average Time CSS */
+
+p{
+padding:0px 0px 7px 0px;}
+
+.main_container{
+width:320px; height:100%; margin:0px auto; padding:0px; top:0px; text-align:center; overflow:hidden; background-color:#FC0}
+
+.app_container{
+position:relative; margin:0px auto; padding:0px; top:0px; text-align:center;}
+
+
+
+.headLogo{
+position:relative; margin:10px 0px 10px 0px;}
+
+.strongish{
+font-weight:bold;}
+
+
+.searchForm{
+position:relative; height:50px;}
+	
+	.searchField{
+	position:relative; margin-bottom:5px;}
+	
+	.serarchFieldSubmit{
+	width:300px;}
+
+
+
+.welcomeScreen{
+}
+
+
+
+.searchNotFoundMsg{
+padding:10px; margin:10px 0px 10px 0px;}
+
+.additionConfirmedFoundMsg{
+padding:10px; margin:10px 0px 10px 0px;}
+
+
+
+.viewStopWatch{
+position:absolute; margin:0px auto; top:0px; width:320px; height:1024px;}
+
+	.clockBg{
+	position:relative; top:-356; topwidth:1320px; height:1024px; background-color:#000; opacity:0.75;}
+	
+	.clockContent{}
+	
+
+
+.timeEntryControlsContent{
+position:absolute; top:10px; left:10px; width:300px; height:350px; background-color:#666;}
+	
+	.comboContainer{
+	position:relative; top:30px; left:65px; width:200px; margin-bottom:10px; background-color:#FC0; text-align:left; clear:both;}
+	
+		.timeEntryComboBoxTitle{
+		width:100px; color:#FFF; margin-left:10px; float:left;}
+	
+		.timeEntryComboBox{
+		width:60px; float:left; margin: 0px 0px 10px 0px;}
+		
+		.timeEntryControlsButtons{
+		position:relative; top:40px;}
+	
+	.timeEntryButton{
+	width:200px;}
+
+.timeEntryControlsBg{
+position:absolute; width:320px; height:1024px; top:0px; background-color:#000; opacity:0.75;}
+
+
+
+.latencyScreen{
+position:absolute; margin:0px auto; top:0px; width:320px; height:1024px;}
+
+	.latencyScreenBg{
+	position:absolute; width:320px; height:1024px; background-color:#000; opacity:0.75;}
+	
+	.latencyScreenImg{
+	position:relative; top:150px;}
+	}
