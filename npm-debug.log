@@ -1,0 +1,198 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'db-mysql' ]
+info using npm@1.1.12
+info using node@v0.6.14
+verbose config file /Users/matt/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose cache add [ 'db-mysql', null ]
+silly cache add: name, spec, args [ undefined, 'db-mysql', [ 'db-mysql', null ] ]
+verbose parsed url { pathname: 'db-mysql', path: 'db-mysql', href: 'db-mysql' }
+verbose addNamed [ 'db-mysql', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'db-mysql', '', false ]
+verbose raw, before any munging db-mysql
+verbose url resolving [ 'https://registry.npmjs.org/', './db-mysql' ]
+verbose url resolved https://registry.npmjs.org/db-mysql
+verbose etag "A93M1ZOF4JZ6QBCHI5OH6PIPA"
+http GET https://registry.npmjs.org/db-mysql
+http 304 https://registry.npmjs.org/db-mysql
+silly get cb [ 304,
+silly get cb   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+silly get cb     etag: '"A93M1ZOF4JZ6QBCHI5OH6PIPA"',
+silly get cb     date: 'Fri, 23 Mar 2012 20:35:29 GMT',
+silly get cb     'content-length': '0' } ]
+verbose etag db-mysql from cache
+silly name, range, hasData 2 [ 'db-mysql', '', true ]
+silly versions [ 'db-mysql',
+silly versions   [ '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.4.2',
+silly versions     '0.4.3',
+silly versions     '0.4.4',
+silly versions     '0.4.5',
+silly versions     '0.4.6',
+silly versions     '0.4.7',
+silly versions     '0.4.8',
+silly versions     '0.4.9',
+silly versions     '0.5.0',
+silly versions     '0.5.1',
+silly versions     '0.5.2',
+silly versions     '0.5.3',
+silly versions     '0.5.4',
+silly versions     '0.5.5',
+silly versions     '0.5.6',
+silly versions     '0.5.7',
+silly versions     '0.5.8',
+silly versions     '0.5.9',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.2',
+silly versions     '0.6.3',
+silly versions     '0.6.4',
+silly versions     '0.6.5',
+silly versions     '0.6.6',
+silly versions     '0.6.7',
+silly versions     '0.6.8',
+silly versions     '0.6.9',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3',
+silly versions     '0.7.4',
+silly versions     '0.7.5',
+silly versions     '0.7.6' ] ]
+verbose bin dist [ '0.6-ares1.7.5-DEV-evundefined-openssl0.9.8r-v83.6.6.24-darwin-x64-11.2.0',
+verbose bin dist   { shasum: 'ff870557afb1ee4197712211d26b6a05394a7aeb',
+verbose bin dist     tarball: 'http://registry.npmjs.org/db-mysql/-/db-mysql-0.7.6.tgz' } ]
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/matt/.npm/db-mysql/0.7.6/package/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     gypfile: false,
+verbose has wscript     wscript: true } ]
+verbose caching /Users/matt/.npm/db-mysql/0.7.6/package/package.json
+verbose loadDefaults db-mysql@0.7.6
+silly resolved [ { name: 'db-mysql',
+silly resolved     description: 'MySQL database bindings for Node.JS',
+silly resolved     keywords: 
+silly resolved      [ 'database',
+silly resolved        'db',
+silly resolved        'native',
+silly resolved        'binding',
+silly resolved        'library',
+silly resolved        'plugin',
+silly resolved        'client',
+silly resolved        'mysql',
+silly resolved        'libmysql' ],
+silly resolved     homepage: 'http://nodejsdb.org/db-mysql',
+silly resolved     version: '0.7.6',
+silly resolved     engines: { node: '>=0.4.1' },
+silly resolved     maintainers: [ { name: 'Mariano Iglesias', email: 'mgiglesias@gmail.com' } ],
+silly resolved     bugs: { url: 'http://github.com/mariano/node-db-mysql/issues' },
+silly resolved     licenses: [ { type: 'MIT' } ],
+silly resolved     repositories: 
+silly resolved      [ { type: 'git',
+silly resolved          url: 'https://github.com/mariano/node-db-mysql.git' } ],
+silly resolved     main: './db-mysql',
+silly resolved     scripts: 
+silly resolved      { install: 'node-waf configure build',
+silly resolved        preuninstall: 'rm -rf build/*',
+silly resolved        test: 'node-waf test',
+silly resolved        doc: 'node-waf doc' },
+silly resolved     devDependencies: { nodeunit: '*', nodelint: '*' },
+silly resolved     _id: 'db-mysql@0.7.6',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.12',
+silly resolved     _nodeVersion: 'v0.6.14',
+silly resolved     _defaultsLoaded: true,
+silly resolved     _from: 'db-mysql' } ]
+info into /Developer/Benches/averagetimeofit db-mysql@0.7.6
+info installOne db-mysql@0.7.6
+verbose from cache /Users/matt/.npm/db-mysql/0.7.6/package/package.json
+info unbuild /Developer/Benches/averagetimeofit/node_modules/db-mysql
+verbose mkdir (expected) error ENOENT, stat '/Developer/Benches/averagetimeofit/node_modules/db-mysql'
+verbose mkdir done: /Developer/Benches/averagetimeofit/node_modules/db-mysql 755
+verbose unpack_ uid, gid [ 501, 20 ]
+verbose unpackTarget /Developer/Benches/averagetimeofit/node_modules/db-mysql
+silly gunzTarPerm modes [ '755', '644' ]
+verbose gunzed /Developer/Benches/averagetimeofit/node_modules/db-mysql
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Developer/Benches/averagetimeofit/node_modules/db-mysql/package.json',
+verbose has wscript     gypfile: false,
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+verbose caching /Developer/Benches/averagetimeofit/node_modules/db-mysql/package.json
+verbose loadDefaults db-mysql@0.7.6
+info preinstall db-mysql@0.7.6
+verbose from cache /Developer/Benches/averagetimeofit/node_modules/db-mysql/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /Developer/Benches/averagetimeofit/node_modules/db-mysql/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /Developer/Benches/averagetimeofit/node_modules/db-mysql
+info build /Developer/Benches/averagetimeofit/node_modules/db-mysql
+verbose from cache /Developer/Benches/averagetimeofit/node_modules/db-mysql/package.json
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Developer/Benches/averagetimeofit/node_modules' ]
+info linkStuff db-mysql@0.7.6
+verbose linkBins db-mysql@0.7.6
+verbose linkMans db-mysql@0.7.6
+verbose rebuildBundles db-mysql@0.7.6
+info install db-mysql@0.7.6
+verbose unsafe-perm in lifecycle false
+verbose Setting uid from 0 501
+verbose stack at uid setting Error
+verbose stack at uid setting     at exec (/usr/local/lib/node_modules/npm/lib/utils/exec.js:35:17)
+verbose stack at uid setting     at Array.0 (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:146:5)
+verbose stack at uid setting     at EventEmitter._tickCallback (node.js:192:40)
+silly exec sh "-c" "node-waf configure build"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'node-waf configure build' ],
+silly spawning   '/Developer/Benches/averagetimeofit/node_modules/db-mysql' ]
+info db-mysql@0.7.6 Failed to exec install script
+info unbuild /Developer/Benches/averagetimeofit/node_modules/db-mysql
+verbose from cache /Developer/Benches/averagetimeofit/node_modules/db-mysql/package.json
+info preuninstall db-mysql@0.7.6
+verbose unsafe-perm in lifecycle false
+verbose Setting uid from 0 501
+verbose stack at uid setting Error
+verbose stack at uid setting     at exec (/usr/local/lib/node_modules/npm/lib/utils/exec.js:35:17)
+verbose stack at uid setting     at Array.0 (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:146:5)
+verbose stack at uid setting     at EventEmitter._tickCallback (node.js:192:40)
+silly exec sh "-c" "rm -rf build/*"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'rm -rf build/*' ],
+silly spawning   '/Developer/Benches/averagetimeofit/node_modules/db-mysql' ]
+info uninstall db-mysql@0.7.6
+verbose unbuild db-mysql@0.7.6 [ true,
+verbose unbuild db-mysql@0.7.6   '/Developer/Benches/averagetimeofit/node_modules',
+verbose unbuild db-mysql@0.7.6   '/Developer/Benches/averagetimeofit/node_modules' ]
+info postuninstall db-mysql@0.7.6
+ERR! db-mysql@0.7.6 install: `node-waf configure build`
+ERR! `sh "-c" "node-waf configure build"` failed with 1
+ERR! 
+ERR! Failed at the db-mysql@0.7.6 install script.
+ERR! This is most likely a problem with the db-mysql package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     node-waf configure build
+ERR! You can get their info via:
+ERR!     npm owner ls db-mysql
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "install" "db-mysql"
+ERR! cwd /Developer/Benches/averagetimeofit
+ERR! node -v v0.6.14
+ERR! npm -v 1.1.12
+ERR! code ELIFECYCLE
+ERR! message db-mysql@0.7.6 install: `node-waf configure build`
+ERR! message `sh "-c" "node-waf configure build"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]
